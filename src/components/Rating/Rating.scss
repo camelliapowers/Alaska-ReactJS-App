@@ -1,0 +1,33 @@
+
+.rc-slider-handle{
+    background-image: url('/images/plane.png');
+        width: 45px;
+    height: 45px;
+        margin-top: -20px;
+        border: none;
+          background-color: transparent;
+}
+.rc-slider-handle:active {
+     border: none !important;
+     box-shadow: none;
+    cursor: -webkit-grabbing;
+    cursor: grabbing;
+    }
+    .rc-slider-track {
+         box-shadow: 0 4px 4px 0 rgba(115, 225, 0, 0.5), 0 6px 20px 0 rgba(115, 225, 0, 0.5);
+    background-color: #9bff00;
+}
+ul.rating-number{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: right;
+     -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-justify-content: flex-end;
+   justify-content: flex-end;
+    li{
+        flex: 1;
+        padding-top: 20px;
+    }
+}

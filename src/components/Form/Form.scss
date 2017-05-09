@@ -1,0 +1,40 @@
+
+
+.form-container{
+display: block;
+    align-items: end;
+    margin: 0 auto;
+    padding:30px;
+    max-width: 665px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+     border-radius: 15px;
+     margin-top: 40px;
+     margin-bottom: 40px;
+
+}
+.form{
+     display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+     text-align: left;
+}
+
+.rate-item{
+    flex: 1;
+       padding: 20px 60px 20px 50px;
+}
+.comment{
+   text-align: left;
+       margin: 0 30px;
+   textarea{
+       -webkit-border-radius: 10px;
+    -moz-border-radius: 10;
+    border-radius: 10;
+       width: 96%;
+    height: 100px;
+    resize: none;
+    font-size: 14px;
+    padding: 2%;
+}
+}
