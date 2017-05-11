@@ -11,10 +11,26 @@ export interface HeaderProps {
 @observer
 export class Header extends React.Component<HeaderProps, undefined> {
     render() {
+        /*if (UIStore.onSubPage) {
+            return (
+                <div className={`header ${UIStore.onSubPage ? "high-logo" : "low-logo"}`}>
+                    {<HomeButton />}
+                </div>
+            );
+        } else {
+            return (
+                <div className={`header ${UIStore.onSubPage ? "high-logo" : "low-logo"}`}>
+                </div>
+            );
+        }*/
         return ( 
             <div className={`header ${UIStore.onSubPage ? "high-logo" : "low-logo"}`}>
-               <img  src="images/logo-new.png"/>
+               {UIStore.onSubPage && <div className="back-to-home" onClick={this.handleBacktoHomeClick}></div>}
             </div>
         );
+    }
+
+    handleBacktoHomeClick = () => {
+        UIStore.onSubPage = false;
     }
 }

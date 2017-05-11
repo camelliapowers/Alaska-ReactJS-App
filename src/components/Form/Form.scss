@@ -1,40 +1,83 @@
 
 
 .form-container{
-display: block;
+    display: block;
     align-items: end;
     margin: 0 auto;
-    padding:30px;
-    max-width: 665px;
+    padding: 15px;
+    max-width: 600px;
+    max-height: 500px;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
-     border-radius: 15px;
-     margin-top: 40px;
-     margin-bottom: 40px;
-
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    margin-top: 20px;
+    position: relative;
+     h1{padding-top: 20px;}
+   
 }
 .form{
-     display: -webkit-box;
+    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-     text-align: left;
+    text-align: left;
+}
+.section-title{
+    height: 84px;
+    width: 84px;
+    margin: 0 auto;
+    background-color: #266ea8;
+    border-radius: 50%;
+    position: absolute;
+    top: -45px;
+    left:43%;
+    font-size: 16px;
+    text-align: center;
+    display: table;
+   
+    span{
+        display:table-cell;
+        vertical-align: middle;
+    }
+
 }
 
 .rate-item{
     flex: 1;
-       padding: 20px 60px 20px 50px;
+    padding: 0px 40px 0px 40px;
+    p{  margin-top: 6px;}
 }
+
 .comment{
-   text-align: left;
-       margin: 0 30px;
-   textarea{
-       -webkit-border-radius: 10px;
-    -moz-border-radius: 10;
-    border-radius: 10;
-       width: 96%;
-    height: 100px;
-    resize: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: left;
+    margin: 0 30px;
+    p{flex: 1;}
+    textarea{
+        flex: 3;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10;
+        border-radius: 10;
+        width: 96%;
+        height:90px;
+        resize: none;
+        font-size: 14px;
+        padding: 2%;
+    }
+}
+
+.submit-form{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    button{flex: 1;
+    height: 30px;
+    margin: 10px 0px 10px 10px;
+    padding:0;
     font-size: 14px;
-    padding: 2%;
+
+    }
 }
-}
+

@@ -10,9 +10,9 @@ export class Footer extends React.Component<FooterProps, undefined> {
     render() {
         return ( 
             <div className="footer">
-                 <div >
-                        &#169;2018  Alaska Air Group, Inc. All Rights Reserved
-                 </div>
+                 <p>
+                        &#169;2017  Alaska Air Group, Inc. All Rights Reserved
+                 </p>
             </div>
         );
     }

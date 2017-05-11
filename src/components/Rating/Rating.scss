@@ -1,21 +1,22 @@
 
 .rc-slider-handle{
     background-image: url('/images/plane.png');
-        width: 45px;
+    width: 45px;
     height: 45px;
-        margin-top: -20px;
-        border: none;
-          background-color: transparent;
+    margin-top: -20px;
+    border: none;
+    background-color: transparent;
 }
 .rc-slider-handle:active {
-     border: none !important;
-     box-shadow: none;
+    border: none !important;
+    box-shadow: none;
     cursor: -webkit-grabbing;
     cursor: grabbing;
     }
-    .rc-slider-track {
-         box-shadow: 0 4px 4px 0 rgba(115, 225, 0, 0.5), 0 6px 20px 0 rgba(115, 225, 0, 0.5);
-    background-color: #9bff00;
+
+.rc-slider-track {
+    box-shadow: 2px 2px 2px 2px rgba(0, 204, 255, 0.3);
+    background-color: #00ccff;
 }
 ul.rating-number{
     display: -webkit-box;
@@ -23,11 +24,9 @@ ul.rating-number{
     display: flex;
     text-align: right;
      -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-justify-content: flex-end;
-   justify-content: flex-end;
-    li{
-        flex: 1;
-        padding-top: 20px;
-    }
+    flex-direction: row;
+        li{
+            flex: 1;
+            list-style: none;
+        }
 }

@@ -9,7 +9,6 @@ export class Root extends React.Component<{}, void> {
     render() {
         return ( 
             <div className="container">
-                <Header />
                 <Content />
                 <Footer />   
             </div>

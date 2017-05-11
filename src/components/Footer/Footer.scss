@@ -1,16 +1,14 @@
 .footer{
- flex: 0 0 60px;
- color: #fff;
- font-size: 13px;
- text-align: left;
- width: 100%;
- background-image: url('/images/new-eskimo.jpg');
- 
- background-repeat: no-repeat;
- background-position: top right;
- background-position-y: 3px;
- padding-top: 20px;
- border-top: 1px solid #205678;
- z-index: 999px;
-//  div{margin-left: 60px;}
+    flex: 0 0 60px;
+    color: #fff;
+    font-size: 11px;
+    text-align: left;
+    width:100%;
+    background-image: url('/images/eskimo-new.jpg');
+    background-repeat: no-repeat;
+    background-position: top 8px right 20px;
+    background-color: #01426a;
+    p{
+        padding: 12px 24px;
+    }
 }

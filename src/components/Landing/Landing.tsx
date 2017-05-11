@@ -16,7 +16,7 @@ export class Landing extends React.Component<LandingProps, undefined> {
         return ( 
             <div className="landing">
                 <h1>How are we doing?</h1>
-                <h2>Your feedback is important.  Let us know what you think!</h2>
+                <h3>Your feedback is important.  Let us know what you think!</h3>
                 <div className="action_container">
                     <ul>
                         <RoundButton name="info">Flight<br/>Info</RoundButton>
