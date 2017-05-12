@@ -1,0 +1,86 @@
+.modal_bg {
+    width: 1024px;
+    height: 805px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    display: block;
+    z-index:998;
+    padding: 0;
+}
+.modal-content{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 10%;
+}
+
+.modal-container{
+    width: 450px;
+    height: 160px;
+    padding: 15px;
+    background-color: #edf5fa;
+    position: relative;
+    display: block;
+    z-index: 999;
+    top: 30%;
+    margin: 0 auto;
+    border-radius: 12px;
+        p {
+        flex: 4;
+        color: #434343;
+        font-size:20px;
+        margin-top: 0; 
+        line-height: 29px;
+        padding-left: 10px;
+        text-shadow: 1px 1px #fff;
+        
+        }
+}
+.warning-icon{
+    flex: 1;
+    width: 56px; 
+    height: 50px;
+    background-image: url('/images/warning.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    float: left;
+    } 
+
+$background-color: #b0c4e1;
+
+.x-close-button{
+    background-image: url('/images/close-x.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 12px; right: 12px;
+}
+
+.info-button{
+    background-color: $background-color;
+    color: #1b213c;
+    font-size: 16px;
+    display: block;
+    text-align: center;
+    padding: 5px 50px;
+    border-radius: 4px;
+    margin:0 auto;
+    height: 36px;
+}
+
+.info-button-hover{
+    background-color: darken($background-color,10%);
+}
+
+$base-background-color: #dddddd;
+.general-button{
+  @extend .info-button;
+  color:#666;
+  background-color: $base-background-color;
+}
+.general-button-hover{
+    @extend .general-button;
+    background-color: darken($base-background-color, 10%)
+}

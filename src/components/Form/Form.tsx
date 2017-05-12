@@ -1,10 +1,12 @@
 import * as React from "react";
 import {UIStore} from "../../stores/UIStore";
 import {observer} from "mobx-react";
+import {observable} from "mobx";
 
 import{Rating} from "../Rating/Rating";
 import{Recommend} from "../Recommend/Recommend";
 import "./Form.scss";
+import "../Modal/Modal.scss";
 
 export interface FormProps { 
    
@@ -20,34 +22,43 @@ export class Form extends React.Component<FormProps, undefined> {
                 <div><p>Alaska FF Number <span>366</span></p></div>
                 <div className="form">
                     <div className="rate-item">
-                        <p>Check-in</p>
+                        <title>Check-in</title>
                         <Rating />
                     </div>
                     <div className="rate-item">
-                        <p>Staff</p>
+                        <title>Staff</title>
                         <Rating />
                     </div>
                  </div>
                  <div className="form">
                     <div className="rate-item">
-                        <p>Gate facilities </p>
+                        <title>Gate facilities </title>
                         <Rating />
                     </div>
                     <div className="rate-item">
-                        <p>Recommend Alaska?</p>
+                        <title>Recommend Alaska?</title>
                         <Recommend />
                     </div>
                  </div>
                  <div className="comment">
-                     <p>Comments</p>
+                     <title>Comments</title>
                      <textarea className="comment-textarea" placeholder="Add your comments."></textarea>
-                     
                  </div>
                  <div className="submit-form">
-                     <button type="clear">Clear</button>
-                    <button type="submit">Submit</button>
+                     <title></title>
+                     <button className="general-button" type="clear">Clear</button>
+                    <button className={`info-button ${this.isMouseOver ? "info-button-hover" : ""}`} 
+                            onMouseOut={() => this.isMouseOver = false} 
+                            onMouseOver={() => this.isMouseOver = true}  type="submit" onClick={this.handleSubmitClick}>Submit</button>
                  </div>
             </div>
         );
     }
+
+@observable isMouseOver = false
+
+handleSubmitClick = () => {
+        UIStore.page = "contact";
+    } 
+
 }

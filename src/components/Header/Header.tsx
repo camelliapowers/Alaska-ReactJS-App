@@ -31,6 +31,6 @@ export class Header extends React.Component<HeaderProps, undefined> {
     }
 
     handleBacktoHomeClick = () => {
-        UIStore.onSubPage = false;
+        UIStore.page = "landing";
     }
 }

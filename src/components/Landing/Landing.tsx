@@ -16,12 +16,12 @@ export class Landing extends React.Component<LandingProps, undefined> {
         return ( 
             <div className="landing">
                 <h1>How are we doing?</h1>
-                <h3>Your feedback is important.  Let us know what you think!</h3>
+                <p>Your feedback is important.  Let us know what you think!</p>
                 <div className="action_container">
                     <ul>
-                        <RoundButton name="info">Flight<br/>Info</RoundButton>
+                        <RoundButton name="info" onClick={this.handleInfoClick}>Flight<br/>Info</RoundButton>
                         <RoundButton name="feedback" onClick={this.handleFeedbackClick}>Give<br/><span>Feedback</span></RoundButton>
-                        <RoundButton name="game">Trivia<br/>Game</RoundButton>
+                        <RoundButton name="game" onClick={this.handleGameClick}>Trivia<br/>Game</RoundButton>
                     </ul>
                 </div>
             </div>
@@ -31,6 +31,12 @@ export class Landing extends React.Component<LandingProps, undefined> {
     //@observable wasClicked = false
 
     handleFeedbackClick = () => {
-        UIStore.onSubPage = true;
+        UIStore.page = "rating";
+    }
+    handleInfoClick = () => {
+        UIStore.modal = "info";
+    }
+     handleGameClick = () => {
+        UIStore.modal = "game";
     }
 }

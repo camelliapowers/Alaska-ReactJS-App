@@ -5,6 +5,7 @@ import {observer} from "mobx-react";
 import{Landing} from "../Landing/Landing"
 import{Header} from "../Header/Header";
 import{Form} from "../Form/Form"
+import{Contact} from "../Contact/Contact"
 import "./Content.scss";
 
 export interface ContentProps { 
@@ -15,10 +16,11 @@ export interface ContentProps {
 export class Content extends React.Component<ContentProps, undefined> {
     render() {
         return ( 
-             
             <div className="landing-container"> 
                 <Header />
-                    {UIStore.onSubPage ? <Form/> : <Landing/>} 
+                    {UIStore.page === "landing" && <Landing/> }
+                    {UIStore.page === "contact"  && <Contact/>}
+                    {UIStore.page === "rating" && <Form/>}   
             </div>
         );
     }

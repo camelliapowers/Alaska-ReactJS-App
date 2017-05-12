@@ -6,13 +6,14 @@
     margin: 0 auto;
     padding: 15px;
     max-width: 600px;
-    max-height: 500px;
+    height: 500px;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 15px;
     margin-top: 20px;
     position: relative;
      h1{padding-top: 20px;}
+      p{font-size: 18px; line-height: 26px;}
    
 }
 .form{
@@ -21,6 +22,7 @@
     display: flex;
     text-align: left;
 }
+
 .section-title{
     height: 84px;
     width: 84px;
@@ -30,21 +32,21 @@
     position: absolute;
     top: -45px;
     left:43%;
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
     display: table;
-   
     span{
         display:table-cell;
         vertical-align: middle;
     }
-
 }
 
 .rate-item{
     flex: 1;
     padding: 0px 40px 0px 40px;
-    p{  margin-top: 6px;}
+    title{  
+        margin-bottom: 16px;
+        display: block;}
 }
 
 .comment{
@@ -53,13 +55,16 @@
     display: flex;
     text-align: left;
     margin: 0 30px;
-    p{flex: 1;}
+    title{
+        flex: 1; 
+        color: #fff; 
+        display: block; 
+        padding-top: 10px; }
     textarea{
-        flex: 3;
-        -webkit-border-radius: 10px;
-        -moz-border-radius: 10;
-        border-radius: 10;
-        width: 96%;
+        flex:3 1;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
         height:90px;
         resize: none;
         font-size: 14px;
@@ -68,16 +73,15 @@
 }
 
 .submit-form{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-
-    button{flex: 1;
-    height: 30px;
+    @extend .comment;
+    margin:0px 30px ;
+    title{flex:1 0; padding-right: 20px;}
+    button{flex:2 1;
+    height: 36px;
     margin: 10px 0px 10px 10px;
     padding:0;
-    font-size: 14px;
-
+    font-size: 16px;
+    
     }
 }
 
