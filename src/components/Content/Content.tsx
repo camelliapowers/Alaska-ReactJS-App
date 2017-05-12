@@ -16,6 +16,7 @@ export interface ContentProps {
 export class Content extends React.Component<ContentProps, undefined> {
     render() {
         return ( 
+
             <div className="landing-container"> 
                 <Header />
                     {UIStore.page === "landing" && <Landing/> }

@@ -6,6 +6,8 @@
     display: block;
     z-index:998;
     padding: 0;
+    // animation-duration: .5s;
+    // animation-name: fadeIn;
 }
 .modal-content{
     display: -webkit-box;
@@ -84,3 +86,48 @@ $base-background-color: #dddddd;
     @extend .general-button;
     background-color: darken($base-background-color, 10%)
 }
+
+.modal-enter {
+  opacity: 0.01;
+}
+
+.modal-enter.modal-enter-active {
+  opacity: 1;
+  transition: opacity 200ms ease-in;
+}
+
+.modal-leave {
+  opacity: 1;
+}
+
+.modal-leave.modal-leave-active {
+  opacity: 0.01;
+  transition: opacity 200ms ease-in;
+}
+
+// @keyframes fadeIn {
+//   from {
+//     opacity: 0;
+//   }
+
+//   to {
+//     opacity: 1;
+//   }
+// }
+// .fadeIn {
+//   animation-name: fadeIn;
+// }
+
+// @keyframes fadeOut {
+//   from {
+//     opacity: 1;
+//   }
+
+//   to {
+//     opacity: 0;
+//   }
+// }
+
+// .fadeOut {
+//   animation-name: fadeOut;
+// }
