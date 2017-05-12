@@ -15,8 +15,12 @@ export class Recommend extends React.Component<RecommendProps, undefined> {
     render() {
         return ( 
             <div className="recommend-select">
-                <button type="clear">Yes</button>
-                    <button type="submit">No</button>
+                <div className="yes">
+                    <div className="thumbs-up"><p>Yes</p></div>
+                </div>
+                <div className="no">
+                    <div className="thumbs-down"><p>No</p></div>
+                </div>
             </div>
         );
     }

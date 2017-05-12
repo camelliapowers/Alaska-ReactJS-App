@@ -2,8 +2,9 @@
 
 .landing{
     text-align: center; 
-    h1{ font-size: 36px; }
-    p{font-size: 22px; }
+    h1{ font-size: 44px; margin-top: 5px;
+    margin-bottom: 10px; font-weight: normal;  text-shadow: 1px  1px  #3a3f5a; }
+    p{font-size: 22px;  text-shadow: 1px  1px  #3a3f5a; }
 }
 
 .action_container{
@@ -13,11 +14,9 @@
     max-width: 668px;
     margin: 0 auto;
     margin-top: 60px;
-
 }
 
 .action_container ul {
-
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -32,27 +31,40 @@
         -moz-border-radius: 120px;
         border-radius: 120px;
         height: 75%;
-        padding-top: 60px;
+        padding-top: 58px;
         margin: 0 10px;
         justify-content:space-around;
+        text-shadow: 1px  1px  #3a3f5a;
+        box-shadow: 1px 1px #3a3f5a;
             a {
                 span{font-size:30px}
                 outline: none;
             }
         } 
+        li.button-info{
+            background-color: #b3d67a;   
+            &:hover {
+            background-color: darken(#b3d67a, 10%);
+            }
+        } 
+        li.button-feedback{
+            background-color: #2874ae;
+            &:hover {
+                background-color: lighten(#2874ae, 5%);
+                }
+         }
+         li.button-game{
+            background-color: #47a9c4 ;
+            &:hover {
+                background-color: darken(#47a9c4, 10%);
+                }
+        }
 }
 
 ul ~ li{margin-right: 0;}
-li.button-info{
-    background-color: #b3d67a;
-}
 
-li.button-feedback{
-    background-color: #2874ae  ;
-}
 
-li.button-game{
-    background-color: #47a9c4 ;
-}
+
+
 
 

@@ -42,7 +42,7 @@ export class Contact extends React.Component<ContactProps, undefined> {
                      <button className="general-button" onClick={this.handleBacktoHomeClick}>No, Thanks!</button>
                      <button className={`info-button ${this.isMouseOver ? "info-button-hover" : ""}`} 
                             onMouseOut={() => this.isMouseOver = false} 
-                            onMouseOver={() => this.isMouseOver = true} type ="submit">Sent</button>
+                            onMouseOver={() => this.isMouseOver = true} type ="submit">Send</button>
                  </div>
             </div>
         );

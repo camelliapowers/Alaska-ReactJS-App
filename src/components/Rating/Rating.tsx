@@ -25,15 +25,16 @@ export class Rating extends React.Component<RatingProps, undefined> {
     render() {
         return ( 
             <div className="rating-contanainer">
-               <Slider min={1} max={5} defaultValue={0}  />
-                   <ul className="rating-number">
+                <div className="slider-contaner"> <Slider min={1} max={5} defaultValue={3}  /></div>
+                 <ul className="rating-number">
                         <li>1</li>
                         <li>2</li>
                         <li>3</li>
                         <li>4</li>
                         <li>5</li>
-                   </ul>
+                   </ul>  
             </div>
+            
         );
     }
 }

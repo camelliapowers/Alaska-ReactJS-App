@@ -47,9 +47,10 @@ export class Form extends React.Component<FormProps, undefined> {
                  <div className="submit-form">
                      <title></title>
                      <button className="general-button" type="clear">Clear</button>
-                    <button className={`info-button ${this.isMouseOver ? "info-button-hover" : ""}`} 
+                     <button className={`info-button ${this.isMouseOver ? "info-button-hover" : ""}`} 
                             onMouseOut={() => this.isMouseOver = false} 
-                            onMouseOver={() => this.isMouseOver = true}  type="submit" onClick={this.handleSubmitClick}>Submit</button>
+                            onMouseOver={() => this.isMouseOver = true} 
+                            onClick={this.handleSubmitClick}>Submit</button>
                  </div>
             </div>
         );

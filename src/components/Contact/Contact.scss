@@ -7,14 +7,13 @@
     display: -ms-flexbox;
     display: flex;
     text-align: left;
-    margin: 10px 70px 10px 0px;
-    justify-content:flex-start;
+    margin: 10px 80px 10px 0px;
     title{
         flex: 1; 
         color: #fff; 
         display: block; 
         text-align: right;
-        padding: 10px  25px 0px 0px ;
+         padding: 10px  25px 0px 0px ;
         }
     input[type=text]{
         height: 26px;
@@ -24,12 +23,13 @@
         border-radius: 4px;
         font-size: 14px;
         padding: 1.5%;
+        box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.07);
     }
 }
 
 .submit-contact-form{
     @extend .contact;
-    margin: 10px 70px 10px 0px;
+    margin: 10px 80px 10px 0px;
      title{
         padding: 0px  42px 0px 0px ;
         }
