@@ -1,9 +1,9 @@
 @font-face {
 	font-family: 'OCR A Extended';
-	src: url('/OCRAEx/OCRAExtended.eot');
-	src: url('/OCRAEx/OCRAExtended.eot?#iefix') format('embedded-opentype'),
-		url('/OCRAEx/OCRAExtended.woff') format('woff'),
-		url('/OCRAEx/OCRAExtended.ttf') format('truetype');
+	src: url('OCRAEx/OCRAExtended.eot');
+	src: url('OCRAEx/OCRAExtended.eot?#iefix') format('embedded-opentype'),
+		url('OCRAEx/OCRAExtended.woff') format('woff'),
+		url('OCRAEx/OCRAExtended.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -12,7 +12,7 @@
 .slider-contaner{ padding:0px 20px 0px 20px; border-left: 1px solid #fff; border-right: 1px solid #fff;}
 
 .rc-slider-handle{
-    background-image: url('/images/plane.png');
+    background-image: url('images/plane.png');
     width: 45px;
     height: 45px;
     margin-top: -20px;
