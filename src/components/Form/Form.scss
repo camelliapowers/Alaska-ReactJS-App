@@ -1,4 +1,12 @@
-
+@font-face {
+	font-family: 'OCR A Extended';
+	src: url('OCRAEx/OCRAExtended.eot');
+	src: url('OCRAEx/OCRAExtended.eot?#iefix') format('embedded-opentype'),
+		url('OCRAEx/OCRAExtended.woff') format('woff'),
+		url('OCRAEx/OCRAExtended.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
 .form-container{
     display: block;
     align-items: end;
@@ -11,8 +19,17 @@
     border-radius: 15px;
     margin-top: 20px;
     position: relative;
-     h1{padding-top: 5px; font-weight: normal; margin-bottom: 0;}
-      p{font-size: 18px; line-height: 26px;}
+    animation-duration: .3s;
+    animation-name: fadeIn;
+     h1{
+         padding-top: 5px; 
+        font-weight: normal; 
+        margin-bottom: 0;
+     }
+      p{
+          font-size: 18px; 
+          line-height: 26px;
+        }
    
 }
 .form{
@@ -46,7 +63,8 @@
    
     title{  
         margin-bottom: 16px;
-        display: block;text-align: left;}
+        display: block;text-align: left;
+    }
 }
 
 .comment{
@@ -59,7 +77,8 @@
         flex: 1; 
         color: #fff; 
         display: block; 
-        padding-top: 10px; }
+        padding-top: 10px;
+    }
     textarea{
         flex:3 1;
         -webkit-border-radius: 4px;
@@ -76,13 +95,42 @@
 .submit-form{
     @extend .comment;
     margin:0px 30px ;
-    title{flex:1 0; padding-right: 20px;}
-    button{flex:2 1;
-    height: 36px;
-    margin: 10px 0px 10px 10px;
-    padding:0;
-    font-size: 16px;
-    
+    title{
+        flex:1 0; 
+        padding-right: 20px;
+    }
+    button{
+        flex:2 1;
+        height: 36px;
+        margin: 10px 0px 10px 10px;
+        padding:0;
+        font-size: 16px;
     }
 }
 
+.rating-number{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    padding: 0px;
+    li{
+        flex: 1;
+        font-size: 18px;
+        list-style: none;
+        font-family: 'OCR A Extended';
+        text-align: center;
+    }
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

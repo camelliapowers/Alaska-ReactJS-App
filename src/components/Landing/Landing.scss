@@ -2,9 +2,19 @@
 
 .landing{
     text-align: center; 
-    h1{ font-size: 44px; margin-top: 5px;
-    margin-bottom: 10px; font-weight: normal;  text-shadow: 1px  1px  #3a3f5a; }
-    p{font-size: 22px;  text-shadow: 1px  1px  #3a3f5a; }
+    animation-duration: .3s;
+    animation-name: fadeIn;
+    h1{
+        font-size: 44px; 
+        margin-top: 5px;
+        margin-bottom: 10px; 
+        font-weight: normal;  
+        text-shadow: 1px  1px  #3a3f5a; 
+    }
+    p{
+        font-size: 22px;  
+        text-shadow: 1px  1px  #3a3f5a;
+    }
 }
 
 .action_container{
@@ -14,6 +24,8 @@
     max-width: 668px;
     margin: 0 auto;
     margin-top: 60px;
+    animation-duration: .5s;
+    animation-name: fadeInDown;
 }
 
 .action_container ul {
@@ -24,7 +36,7 @@
     max-width: 800px;
     padding: 0;
     margin: 0 auto; 
-        li{
+    li{
         flex: 1;
         list-style: none; 
         -webkit-border-radius:120px;
@@ -36,32 +48,55 @@
         justify-content:space-around;
         text-shadow: 1px  1px  #3a3f5a;
         box-shadow: 1px 1px #3a3f5a;
-            a {
+        a {
                 span{font-size:30px}
                 outline: none;
-            }
-        } 
-        li.button-info{
-            background-color: #b3d67a;   
-            &:hover {
-            background-color: darken(#b3d67a, 10%);
-            }
-        } 
-        li.button-feedback{
-            background-color: #2874ae;
-            &:hover {
-                background-color: lighten(#2874ae, 5%);
-                }
-         }
-         li.button-game{
-            background-color: #47a9c4 ;
-            &:hover {
-                background-color: darken(#47a9c4, 5%);
-                }
         }
+    } 
+    li.button-info{
+        background-color: #b3d67a;   
+        &:hover {
+            background-color: darken(#b3d67a, 10%);
+        }
+    } 
+    li.button-feedback{
+        background-color: #2874ae;
+        &:hover {
+             background-color: lighten(#2874ae, 5%);
+        }
+    }
+    li.button-game{
+        background-color: #47a9c4 ;
+         &:hover {
+            background-color: darken(#47a9c4, 5%);
+        }
+    }
 }
 
 ul ~ li{margin-right: 0;}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 5%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 
 
 

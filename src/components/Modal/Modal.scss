@@ -6,8 +6,6 @@
     display: block;
     z-index:998;
     padding: 0;
-    // animation-duration: .5s;
-    // animation-name: fadeIn;
 }
 .modal-content{
     display: -webkit-box;
@@ -27,7 +25,9 @@
     top: 30%;
     margin: 0 auto;
     border-radius: 12px;
-        p {
+    animation-duration: .3s;
+    animation-name: fadeInDown;
+    p {
         flex: 4;
         color: #434343;
         font-size:20px;
@@ -35,8 +35,7 @@
         line-height: 29px;
         padding-left: 10px;
         text-shadow: 1px 1px #fff;
-        
-        }
+    }
 }
 .warning-icon{
     flex: 1;
@@ -46,7 +45,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     float: left;
-    } 
+} 
 
 $background-color: #b0c4e1;
 
@@ -82,6 +81,7 @@ $base-background-color: #dddddd;
   color:#666;
   background-color: $base-background-color;
 }
+
 .general-button-hover{
     @extend .general-button;
     background-color: darken($base-background-color, 10%)
@@ -105,29 +105,14 @@ $base-background-color: #dddddd;
   transition: opacity 200ms ease-in;
 }
 
-// @keyframes fadeIn {
-//   from {
-//     opacity: 0;
-//   }
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
 
-//   to {
-//     opacity: 1;
-//   }
-// }
-// .fadeIn {
-//   animation-name: fadeIn;
-// }
-
-// @keyframes fadeOut {
-//   from {
-//     opacity: 1;
-//   }
-
-//   to {
-//     opacity: 0;
-//   }
-// }
-
-// .fadeOut {
-//   animation-name: fadeOut;
-// }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}

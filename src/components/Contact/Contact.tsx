@@ -16,7 +16,7 @@ export class Contact extends React.Component<ContactProps, undefined> {
     render() {
         var b = "button-round";
         return ( 
-            <div className="form-container">
+            <div className="contact-container">
                 <div className="section-title"><span>Give<br />Feedback</span></div>
                 <h1>Thank you for your feedback!</h1>
                 <div><p>We’re happy that you had a good flight! <br /> 
@@ -42,7 +42,7 @@ export class Contact extends React.Component<ContactProps, undefined> {
                      <button className="general-button" onClick={this.handleBacktoHomeClick}>No, Thanks!</button>
                      <button className={`info-button ${this.isMouseOver ? "info-button-hover" : ""}`} 
                             onMouseOut={() => this.isMouseOver = false} 
-                            onMouseOver={() => this.isMouseOver = true} type ="submit">Send</button>
+                            onMouseOver={() => this.isMouseOver = true} onClick={this.handleBacktoHomeClick}>Send</button>
                  </div>
             </div>
         );

@@ -1,5 +1,26 @@
 .contact-container{
-    display:block;
+    display: block;
+    align-items: end;
+    margin: 0 auto;
+    padding: 15px;
+    max-width: 600px;
+    height: 500px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    margin-top: 20px;
+    position: relative;
+     h1{padding-top: 5px; 
+        font-weight: normal; 
+        margin-bottom: 0;  
+        animation-duration: .3s;
+        animation-name: fadeIn;
+     }
+     p{font-size: 18px; 
+        line-height: 26px;  
+        animation-duration: .3s;
+        animation-name: fadeIn;
+    }
    
 }
 .contact{
@@ -8,13 +29,15 @@
     display: flex;
     text-align: left;
     margin: 10px 80px 10px 0px;
+    animation-duration: .3s;
+    animation-name: fadeIn;
     title{
         flex: 1; 
         color: #fff; 
         display: block; 
         text-align: right;
          padding: 10px  25px 0px 0px ;
-        }
+    }
     input[type=text]{
         height: 26px;
         flex: 3 1;
@@ -23,20 +46,30 @@
         border-radius: 4px;
         font-size: 14px;
         padding: 1.5%;
-        box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.07);
     }
 }
 
 .submit-contact-form{
     @extend .contact;
     margin: 10px 80px 10px 0px;
-     title{
+    title{
         padding: 0px  42px 0px 0px ;
         }
-    button{flex:2 1;
-    height: 36px;
-    margin: 10px 0px 10px 10px;
-    padding:0;
-    font-size: 16px;
+    button{
+        flex:2 1;
+        height: 36px;
+        margin: 10px 0px 10px 10px;
+        padding:0;
+        font-size: 16px;
     }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
